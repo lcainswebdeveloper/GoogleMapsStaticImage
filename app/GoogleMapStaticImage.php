@@ -46,7 +46,7 @@ class GoogleMapStaticImage{
     }
 
     private function make_image_from_url($path, $url){
-	$resource = fopen($path, 'w');
-	$this->client->request('GET', $url, ['sink' => $resource]);
+    	$resource = fopen($path, 'w');
+    	$this->client->request('GET', $url, ['sink' => $resource]);
     }
 }
